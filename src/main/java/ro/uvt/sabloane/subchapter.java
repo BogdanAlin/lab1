@@ -1,4 +1,4 @@
 package ro.uvt.sabloane;
 
-public class lab2 {
+public class subchapter {
 }
