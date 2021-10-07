@@ -1,6 +1,7 @@
 package ro.uvt.sabloane;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedList;
 
 public class book {
@@ -17,6 +18,6 @@ public class book {
         autori.remove(autor);
     }
     public Collection<author> getauthors() {
-        return autori;
+        return Collections.unmodifiableCollection(autori);
     }
 }
