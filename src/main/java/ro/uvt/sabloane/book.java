@@ -20,4 +20,13 @@ public class book {
     public Collection<author> getauthors() {
         return Collections.unmodifiableCollection(autori);
     }
+    public int createchapter(String s)
+    {
+        chapter.add(s);
+        return 0;
+    }
+    public chapter getchapter(int indexchapterone)
+    {
+        return (chapter) chapters;
+    }
 }
