@@ -10,4 +10,15 @@ public class image {
     public String getimageName() {
         return imageName;
     }
+
+    @Override
+    public String toString() {
+        return "image{" +
+                "imageName='" + imageName + '\'' +
+                '}';
+    }
+
+    public void print(){
+        System.out.println(this);
+    }
 }

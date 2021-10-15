@@ -11,4 +11,14 @@ public class paragraph {
     public String getText() {
         return text;
     }
+
+    @Override
+    public String toString() {
+        return "paragraph{" +
+                "text='" + text + '\'' +
+                '}';
+    }
+    public void print(){
+        System.out.println(this);
+    }
 }

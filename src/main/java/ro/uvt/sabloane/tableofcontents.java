@@ -10,4 +10,16 @@ public class tableofcontents {
     public String getcontentsume() {
         return contents;
     }
+
+    @Override
+    public String toString() {
+        return "tableofcontents{" +
+                "contents='" + contents + '\'' +
+                '}';
+    }
+
+
+    public void print(){
+        System.out.println(this);
+    }
 }

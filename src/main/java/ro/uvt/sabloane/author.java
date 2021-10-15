@@ -10,4 +10,16 @@ public class author {
     public String getNume() {
         return nume;
     }
+    @Override
+    public String toString() {
+        return "author{" +
+                "nume='" + nume + '\'' +
+                '}';
+    }
+    public void print(){
+        System.out.println(this);
+    }
+
+
+
 }

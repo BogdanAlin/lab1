@@ -15,7 +15,7 @@ public class main {
 
         int indexChapterOne = discoTitanic.createchapter("Capitolul 1");
         chapter chp1 = discoTitanic.getchapter(indexChapterOne);
-        int indexSubChapterOneOne = chp1.createsubchapter("Subcapitolul 1.1");
+        int indexSubChapterOneOne = chp1.createSubChapter("Subcapitolul 1.1");
        subchapter scOneOne = chp1.getsubchapter(indexSubChapterOneOne);
        scOneOne.createnewparagraph("Paragraph 1");
        scOneOne.createnewparagraph("Paragraph 2");

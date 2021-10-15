@@ -11,4 +11,14 @@ public class table {
     public String gettitle() {
         return title;
     }
+
+    @Override
+    public String toString() {
+        return "table{" +
+                "title='" + title + '\'' +
+                '}';
+    }
+    public void print(){
+        System.out.println(this);
+    }
 }
