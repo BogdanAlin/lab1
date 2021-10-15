@@ -1,6 +1,6 @@
 package ro.uvt.sabloane;
 
-public class table {
+public class table implements Element{
 
     private final String title;
 
@@ -20,5 +20,20 @@ public class table {
     }
     public void print(){
         System.out.println(this);
+    }
+
+    @Override
+    public void add(Element e) {
+
+    }
+
+    @Override
+    public void remove(Element e) {
+
+    }
+
+    @Override
+    public Element get(int e) {
+        return null;
     }
 }

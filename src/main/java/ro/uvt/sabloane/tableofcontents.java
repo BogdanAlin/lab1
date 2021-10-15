@@ -1,6 +1,6 @@
 package ro.uvt.sabloane;
 
-public class tableofcontents {
+public class tableofcontents implements Element{
     private final String contents;
 
     public tableofcontents(String contents){
@@ -21,5 +21,20 @@ public class tableofcontents {
 
     public void print(){
         System.out.println(this);
+    }
+
+    @Override
+    public void add(Element e) {
+
+    }
+
+    @Override
+    public void remove(Element e) {
+
+    }
+
+    @Override
+    public Element get(int e) {
+        return null;
     }
 }

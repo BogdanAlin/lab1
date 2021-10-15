@@ -1,6 +1,6 @@
 package ro.uvt.sabloane;
 
-public class image {
+public class image implements Element {
     private final String imageName;
 
     public image(String imageName) {
@@ -20,5 +20,20 @@ public class image {
 
     public void print(){
         System.out.println(this);
+    }
+
+    @Override
+    public void add(Element e) {
+
+    }
+
+    @Override
+    public void remove(Element e) {
+
+    }
+
+    @Override
+    public Element get(int e) {
+        return null;
     }
 }

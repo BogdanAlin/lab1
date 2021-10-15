@@ -1,17 +1,20 @@
 package ro.uvt.sabloane;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class book {
-    private final String title;
+public class book extends Section{
     private Collection<author> autori = new LinkedList<>();
     private List<chapter> chapters = new LinkedList<>();
 
     public book(String title) {
-        this.title = title;
+        super(title);
+    }
+
+    @Override
+    public void add(Element e) {
+        super.add(e);
     }
 
     public void addauthor(author autor) {
@@ -38,14 +41,17 @@ public class book {
     @Override
     public String toString() {
         return "book{" +
-                "title='" + title + '\'' +
+                "title='" + super.getTitle() + '\'' +
                 ", autori=" + autori +
-                ", chapters=" + chapters +
+
                 '}';
     }
 
     public void print(){
         System.out.println(this);
+
+
+        elements.forEach(Element::print);
     }
 
 }

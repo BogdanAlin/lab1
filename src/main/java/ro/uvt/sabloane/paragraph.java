@@ -1,6 +1,6 @@
 package ro.uvt.sabloane;
 
-public class paragraph {
+public class paragraph implements Element {
 
     private final String text;
 
@@ -20,5 +20,20 @@ public class paragraph {
     }
     public void print(){
         System.out.println(this);
+    }
+
+    @Override
+    public void add(Element e) {
+
+    }
+
+    @Override
+    public void remove(Element e) {
+
+    }
+
+    @Override
+    public Element get(int e) {
+        return null;
     }
 }
