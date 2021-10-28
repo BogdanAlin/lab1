@@ -1,7 +1,6 @@
 package ro.uvt.sabloane;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.LinkedList;
 public class subchapter {
     private final String name;
